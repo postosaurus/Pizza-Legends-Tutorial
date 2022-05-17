@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RPG</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/TextMessage.css">
+    <link rel="stylesheet" href="./css/SceneTransition.css">
+    <link rel="stylesheet" href="./css/KeyboardMenu.css">
+
+    <!-- Battle -->
+    <link rel="stylesheet" href="./css/SubmissionMenu.css">
+    <link rel="stylesheet" href="./css/Team.css">
+    <link rel="stylesheet" href="./css/Combatant.css">
+    <link rel="stylesheet" href="./css/Battle.css">
+
+  </head>
+  <body>
+    <div class="gameContainer">
+      <canvas class="gameCanvas" width="352" height="192"></canvas>
+      <aside class="debug">
+        <h3>Debug Mode</h3>
+        <p>
+          <span class="littleTitle">Player position:</span>
+          <span class="position posX">x: </span>
+          <span class="position posY">y: </span>
+        </p>
+        <!-- <p>
+            <label class="littleTitle" id="editWallsLabel" for="editWalls">Edit Walls</label>
+            <input type="checkbox" id="editWalls" autofocus value="true">
+        </p> -->
+        <p class="wall"></p>
+      </aside>
+    </div>
+
+  <script src="./js/Utils.js" charset="utf-8"></script>
+  <script src="./content/pizzas.js" charset="utf-8"></script>
+  <script src="./content/actions.js" charset="utf-8"></script>
+  <script src="./js/Sprite.js" charset="utf-8"></script>
+  <script src="./js/OverworldEvent.js" charset="utf-8"></script>
+  <script src="./js/GameObject.js" charset="utf-8"></script>
+  <script src="./js/Person.js" charset="utf-8"></script>
+  <script src="./js/DirectionInput.js" charset="utf-8"></script>
+  <script src="./js/KeyPressListener.js" charset="utf-8"></script>
+  <script src="./js/OverworldMap.js" charset="utf-8"></script>
+  <script src="./js/RevealingText.js" charset="utf-8"></script>
+  <script src="./js/TextMessage.js" charset="utf-8"></script>
+  <script src="./js/SceneTransition.js" charset="utf-8"></script>
+  <script src="./js/KeyboardMenu.js" charset="utf-8"></script>
+  <script src="./js/Overworld.js" charset="utf-8"></script>
+
+  <!-- Battle -->
+  <script src="./battle/Battle.js" charset="utf-8"></script>
+  <script src="./battle/Team.js" charset="utf-8"></script>
+  <script src="./battle/Combatant.js" charset="utf-8"></script>
+  <script src="./battle/SubmissionMenu.js" charset="utf-8"></script>
+  <script src="./battle/ReplacementMenu.js" charset="utf-8"></script>
+  <script src="./battle/TurnCycle.js" charset="utf-8"></script>
+  <script src="./battle/BattleEvent.js" charset="utf-8"></script>
+  <script src="./battle/BattleAnimations.js" charset="utf-8"></script>
+
+
+  <script src="./js/init.js" charset="utf-8"></script>
+  </body>
+</html>

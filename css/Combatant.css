@@ -1,0 +1,151 @@
+.combatant {
+  width: 59px;
+  height: 14px;
+  background: url('../images/ui/combatant-plate.png');
+  position: absolute;
+}
+
+.battle .combatant {
+  transform: scale(2);
+  transition: opacity 0.4s;
+}
+
+.battle .combatant[data-active="false"] {
+  opacity: 0;
+}
+
+.battle .combatant[data-active="true"] {
+  opacity: 1;
+}
+
+.combatant[data-team='player'] {
+  left: 46px;
+  top: 70px;
+}
+
+.combatant[data-team='enemy'] {
+  top: 28px;
+  right: 70px;
+}
+
+.combatant_character_crop {
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  width: 22px;
+  height: 12px;
+  overflow: hidden;
+}
+.combatant_character {
+  display:  block;
+  position: absolute;
+  left: -11px;
+  bottom: -7px;
+}
+
+.battle .combatant_character_crop {
+  display: none;
+}
+
+.combatant_name {
+  position: absolute;
+  left: -2px;
+  top: -8px;
+  white-space: nowrap;
+  background: var(--bgGUI);
+  color: #fff;
+  font-size: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0;
+}
+.combatant_type {
+  position: absolute;
+  left: 3px;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+}
+
+.combatant_life-container {
+  position: absolute;
+  left: 20px;
+  top:4px;
+  width: 26px;
+  height: 3px;
+}
+.combatant_life-container > rect {
+  transition: width: 0.2s;
+}
+
+.combatant_xp-container {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 26px;
+  height: 2px;
+}
+
+.combatant_level {
+  position: absolute;
+  font-size: 10px;
+  left: 53px;
+  /* top: px; */
+  width: 17px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9dacc;
+  border: 1px solid #a48465;
+  font-family: monospace;
+  margin: 0;
+}
+
+.combatant_status {
+  position: absolute;
+  text-align: center;
+  font-size: 5px;
+  left: 53px;
+  bottom: -3px;
+  width: 17px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: var(--bgcolor);
+  margin: 0;
+  display: none;
+}
+
+.combatant_status[data-status='saucy'] {
+  color: gold;
+}
+.combatant_status[data-status='clumsy'] {
+  color: lightgray;
+}
+
+.pizza {
+  position: absolute;
+  background-image: url('../images/characters/pizzas/pizza-shadow.png');
+  transform: scale(2);
+  transition: opacity 0.4s, transform 0.4s
+}
+
+.pizza[data-team='player'] {
+  bottom: 73px;
+  left: 51px;
+}
+
+.pizza[data-team='enemy'] {
+  top: 47px;
+  right: 100px;
+}
+
+.pizza[data-active="false"] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0) scale(2);
+}
+
+.pizza[data-active="true"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(2);
+}

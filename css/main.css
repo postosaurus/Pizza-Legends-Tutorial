@@ -1,0 +1,79 @@
+:root {
+  --bgcolor: #333;
+  --scale: 3;
+  --bgGUI: rgba(200, 200, 200, 0.8);
+  --bgGUITop: rgba(200, 200, 200, 1);
+  --selectedColor: #3fdf7e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bgcolor);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.gameContainer {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 352px;
+  height: 192px;
+  outline: 1px solid white;
+
+  transform: scale(var(--scale)) translateY(40%) translateX(0%);
+}
+
+.gameCanvas {
+  image-rendering: pixelated;
+}
+
+/* .gameCanvas:hover {
+  background-color: red;
+} */
+
+.debug {
+  position: absolute;
+  top: 0;
+  left: 270px ;
+  width: 82px;
+  background-color: var(--bgGUI);
+  padding: 0.2em;
+  margin: 0 auto;
+  font-size: 6px;
+  border-radius: 0.5em;
+  border-top-right-radius: 0em;
+  border-bottom-right-radius: 0em;
+}
+
+.debug .littleTitle {
+  text-decoration: underline;
+  display: block;
+  width: 100%;
+  margin: 0.5em auto;
+}
+
+.debug .position {
+  padding-left: 0.5em;
+}
+
+.debug #editWalls {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.debug .selected {
+  color: white;
+  list-style-type: circle;
+}
+
+.hide {
+  display: none;
+}
